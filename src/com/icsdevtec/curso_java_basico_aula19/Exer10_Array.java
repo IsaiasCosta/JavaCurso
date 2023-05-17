@@ -3,6 +3,8 @@
  */
 package com.icsdevtec.curso_java_basico_aula19;
 
+import java.util.Scanner;
+
 /**
  * @author icsdevtec
  *
@@ -13,7 +15,29 @@ public class Exer10_Array {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+
+		int[] vetorA = new int[10];
+		int[] vetorB = new int[vetorA.length];
+
+		for (int i = 0; i < vetorA.length; i++) {
+			System.out.println(" Entre com o valores do vetor A " + i);
+			vetorA[i] = scan.nextInt();
+
+			vetorB[i] = vetorA[i] % 2;
+			
+		}
+		System.out.println();
+		System.out.print("--- Vetor A = ");
+		for (int i = 0; i < vetorA.length; i++) {
+			System.out.print( vetorA[i] + " " );
+		}
+		System.out.println();
+		System.out.print("--- Vetor B = ");
+		for (int i = 0; i < vetorB.length; i++) {
+			System.out.print( vetorB[i] + " " );
+		}
+ 
 
 	}
 
