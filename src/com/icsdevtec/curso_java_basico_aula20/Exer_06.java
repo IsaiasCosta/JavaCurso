@@ -63,7 +63,7 @@ public class Exer_06 {
 			// controlando o tabuleiro
 			linha--;
 			coluna--;
-			if (jogoVelha[linha][coluna] == 'X' || jogoVelha[linha][coluna] == 'O') {
+    			if (jogoVelha[linha][coluna] == 'X' || jogoVelha[linha][coluna] == 'O') {
 				System.out.println(" A Posição escolhida, já esta oculpada, tente novamente ");
 			} else {
 				jogoVelha[linha][coluna] = sinal;
