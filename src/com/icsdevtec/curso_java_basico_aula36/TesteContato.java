@@ -37,6 +37,7 @@ public class TesteContato {
 		
 		 
 		  // Relacionamento tem muitos usa o array
+		 
 		 Telefone[] telefones = new Telefone[2];
 		 telefones[0]=tef;
 		 telefones[1]=tef2;

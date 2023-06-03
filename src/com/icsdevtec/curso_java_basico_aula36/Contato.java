@@ -2,12 +2,12 @@ package com.icsdevtec.curso_java_basico_aula36;
 
 public class Contato {
 
-	
+	//Atributos
 	private String nome;
 	private Endereco endereco;
 	private Telefone [] telefones;
 	
-	
+	// Gettes e Settes 
 	public String getNome() {
 		return nome;
 	}
@@ -27,9 +27,4 @@ public class Contato {
 		this.telefones = telefones;
 	}
 
-	
-	
-	
-	
-	
 }
