@@ -39,7 +39,7 @@ public class ContaBancaria {
 	}
 
 	public void setSaldo(double saldo) {
-		saldo = saldo;
+		this.saldo = saldo;
 	}
 
 	// Metodo toString

@@ -26,11 +26,11 @@ public class ContaPoupanca extends ContaBancaria {
 	}
 
 	public boolean atualizarSaldo(double taxaRedimento) {
-
+       
 		Calendar hoje = Calendar.getInstance();
 		if (diaRedimento == hoje.get(Calendar.DAY_OF_MONTH)) {
 			// saldo+=saldo*taxaRedimento;
-			 this.setSaldo(this.getSaldo() + (this.getSaldo() * taxaRedimento));
+			super.setSaldo(super.getSaldo() + super.getSaldo()*taxaRedimento);
 			return true;
 		}
 		return false;
