@@ -7,8 +7,9 @@ public class Piramide extends FiguraD3 {
 	private double arestaBase;
 
 	private double arestaApotema;
-	
-	
+
+	private int numPoligno;
+
 	private FiguraD2 base;
 
 	public double getAltura() {
@@ -41,5 +42,29 @@ public class Piramide extends FiguraD3 {
 
 	public void setBase(FiguraD2 base) {
 		this.base = base;
+	}
+
+	@Override
+	public double calcularArea() {
+		if (base!=null) {
+			return (numPoligno * ((arestaBase * arestaApotema) / 2))+base.calcularArea();
+		}
+		return 0;
+	}
+
+	@Override
+	public double calcularVolume() {
+		if (base != null) {
+			return (base.calcularArea() * altura / 3);
+		}
+		return 0;
+	}
+
+	public int getNumPoligno() {
+		return numPoligno;
+	}
+
+	public void setNumPoligno(int numPoligno) {
+		this.numPoligno = numPoligno;
 	}
 }

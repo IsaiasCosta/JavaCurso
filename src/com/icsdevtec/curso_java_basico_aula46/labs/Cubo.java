@@ -11,5 +11,17 @@ public class Cubo extends FiguraD3 {
 	public void setAresta(int aresta) {
 		this.aresta = aresta;
 	}
-	
+
+	@Override
+	public double calcularArea() {
+
+		return 6 * Math.pow(aresta, 2);
+	}
+
+	@Override
+	public double calcularVolume() {
+
+		return Math.pow(aresta, 3);
+	}
+
 }

@@ -1,6 +1,8 @@
 package com.icsdevtec.curso_java_basico_aula46.labs;
 
-public class Cilindro extends FiguraD3 {
+import java.util.Map;
+
+public class Cilindro extends FiguraD3  {
 
 	
 	 private int altura;
@@ -21,6 +23,22 @@ public class Cilindro extends FiguraD3 {
 
 	public void setRaio(double raio) {
 		this.raio = raio;
+	}
+
+	@Override
+	public double calcularArea() {
+		
+		double areaBase = Math.PI*Math.pow(raio, 2);
+		double areaLateral = (2*Math.PI*raio*raio*altura);
+		double areaTotal = (2*areaBase)*(areaLateral);
+		
+		return areaTotal;
+	}
+
+	@Override
+	public double calcularVolume() {
+		
+		return (Math.PI*Math.pow(raio, 2))*altura;
 	}
 	 
 	 

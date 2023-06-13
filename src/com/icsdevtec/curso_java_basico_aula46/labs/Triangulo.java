@@ -1,6 +1,6 @@
 package com.icsdevtec.curso_java_basico_aula46.labs;
 
-public class Triangulo  extends FiguraD2  {
+public class Triangulo  extends FiguraD2   {
 
 	private double base;
 	private double altura;
@@ -18,6 +18,11 @@ public class Triangulo  extends FiguraD2  {
 	}
 	public void setAltura(double altura) {
 		this.altura = altura;
+	}
+	@Override
+	public double calcularArea() {
+     
+		return ((base*altura)/2);
 	}
 	
 	
