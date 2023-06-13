@@ -2,6 +2,7 @@ package com.icsdevtec.curso_java_basico_aula46.labs;
 
 public class Piramide extends FiguraD3 {
 
+	//Atributo
 	private double altura;
 
 	private double arestaBase;
@@ -12,6 +13,10 @@ public class Piramide extends FiguraD3 {
 
 	private FiguraD2 base;
 
+	
+	
+	
+	
 	public double getAltura() {
 		return altura;
 	}
