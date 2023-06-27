@@ -1,6 +1,6 @@
 package com.icsdevtec.curso_java_basico_aula73;
 
-public class MinhaThread {
+public class MinhaThread  implements Runnable{
 	private String nome;
 	private boolean estaSuspensa;
 	private boolean foiTerminada;
