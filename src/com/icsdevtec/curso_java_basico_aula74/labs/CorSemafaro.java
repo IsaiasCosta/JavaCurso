@@ -4,4 +4,6 @@ public enum CorSemafaro {
 
 	
 	 VERDE, AMARELO, VERMELHO;
+	
+	
 }
